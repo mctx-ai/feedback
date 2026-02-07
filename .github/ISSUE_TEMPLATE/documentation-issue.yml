@@ -1,0 +1,30 @@
+name: Documentation Issue
+description: Report an error or gap in the docs
+labels: ["documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Help us improve the docs at [docs.mctx.ai](https://docs.mctx.ai). Let us know what's wrong or missing.
+  - type: input
+    id: page
+    attributes:
+      label: Page or Section
+      description: Which page or section has the issue?
+      placeholder: e.g., https://docs.mctx.ai/building-mcp-servers/tools-and-resources
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What's wrong or missing?
+      description: Describe the issue with the documentation.
+    validations:
+      required: true
+  - type: textarea
+    id: suggested-fix
+    attributes:
+      label: Suggested Fix
+      description: If you know what the correct information should be, share it here.
+    validations:
+      required: false

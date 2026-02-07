@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: mctx Documentation
+    url: https://docs.mctx.ai
+    about: Check our docs before filing an issue
+  - name: Email Support
+    url: mailto:support@mctx.ai
+    about: For account, billing, or private inquiries

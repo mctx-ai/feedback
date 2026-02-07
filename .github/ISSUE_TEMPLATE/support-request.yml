@@ -1,0 +1,41 @@
+name: Support Request
+description: Get help with mctx
+labels: ["support"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Need help? We're here for you. For account or billing inquiries, email support@mctx.ai instead.
+  - type: textarea
+    id: description
+    attributes:
+      label: What do you need help with?
+      description: Describe what you're trying to do and where you're stuck.
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: What have you tried?
+      description: Any steps you've already taken or docs you've consulted.
+      placeholder: |
+        - Checked docs.mctx.ai
+        - Tried redeploying
+        - ...
+    validations:
+      required: false
+  - type: input
+    id: server-slug
+    attributes:
+      label: MCP Server Slug
+      description: If this is related to a specific MCP server, provide the slug.
+      placeholder: e.g., my-server
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Any other details that might help us help you.
+    validations:
+      required: false
